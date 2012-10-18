@@ -6,8 +6,8 @@ _G.os = { date = require('os').date }
 
 local string = require('string')
 local table = require('table')
-local http = require("http")
-local json = require("json")
+local http = require('http')
+local json = require('json')
 
 local env = {}
 function getevalenv(name)
