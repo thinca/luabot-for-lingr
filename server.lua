@@ -1,6 +1,7 @@
 _G.string = require('string')
 _G.table = require('table')
 _G.math = require('math')
+_G.coroutine = require('coroutine')
 _G.os = { date = require('os').date }
 
 
