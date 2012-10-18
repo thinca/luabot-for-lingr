@@ -52,6 +52,7 @@ http.createServer(function (req, res)
         print(mes.nickname)
         print(body)
         local success, r = pcall(eval, body)
+        print(r)
         if success and r then
           result = result .. r
         end
