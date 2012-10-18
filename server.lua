@@ -9,6 +9,7 @@ local string = require('string')
 local table = require('table')
 local http = require('http')
 local json = require('json')
+local dump = require('./dump.lua').dump
 
 local env = {}
 function getevalenv(name)
@@ -32,7 +33,7 @@ local function eval(body)
     f, err = loadstring(template .. body)
   end
   if f then
-    return tostring(f())
+    return dump(f())
   end
   return err
 end
